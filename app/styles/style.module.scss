@@ -1,0 +1,123 @@
+.header{
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  .menu{
+    width: 480px;
+    height: 650px;
+    background-color: #98a9d1;
+    border-radius: 25px;
+    position: relative;
+  }
+}
+.menuBtn{
+   height:40px ;
+   width: 100px;
+   border-radius: 25px;
+   cursor: pointer;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   .slider{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .el{
+      height: 100%;
+      width: 100%;
+      background-color:#98a9d1;
+      text-transform: uppercase;
+      &:nth-of-type(2){
+          position: absolute;
+          top: 100%;
+          background-color: black;
+          color: white;
+          
+      }
+      &:hover{
+        .perspectiveText{
+          transform: rotateX(90deg);
+          p{
+            &:nth-of-type(1){
+              transform: translateY(-100%);
+              opacity: 0 ;
+            }
+            &:nth-of-type(2){
+              
+              opacity: 1 ;
+            }
+          }
+        }
+      }
+     }
+   }
+   .perspectiveText {
+    width:100% ;
+    height: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    transition: transform 0.75s cubic-bezier(0.76,0,0.24,1);
+    transform-style: preserve-3d;
+    p{
+      transition: all 0.75s cubic-bezier(0.76,0,0.24,1);
+
+      &:nth-of-type(2){
+             position: absolute;
+             transform: rotateX(-90deg) translateY(16px);
+             transform-origin:bottom center;
+             opacity: 0;
+      }
+    }
+   }
+   
+ }
+
+ .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 40px 50px 40px;
+  height: 100%;
+  box-sizing: border-box;
+  .navBody{
+    
+    display: flex;
+        gap: 10px;
+        flex-direction: column;
+        .linkContainer{
+            perspective: 120px;
+            perspective-origin: bottom;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 46px;
+     
+    }
+    a:hover{
+      color: white;
+      transition-duration: 300ms;
+    }
+   
+  }
+  .footerNav{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      width: 50%;
+      color: black;
+      text-decoration: none;
+      text-transform: capitalize;
+      
+    }
+    a:hover{
+      color: white;
+      transition-duration: 300ms;
+    }
+  }
+ 
+ }
+
+ 
