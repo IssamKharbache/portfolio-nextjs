@@ -30,7 +30,12 @@ const info = [
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const { register, reset, handleSubmit } = useForm();
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const onSubmitForm = async (data) => {
     data.subject = "Get in touch with client from portfolio";
@@ -80,32 +85,69 @@ const Contact = () => {
 
               {/* inputs */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input
-                  type="firstname"
-                  placeholder="First name"
-                  {...register("firstname")}
-                />
-                <Input
-                  type="lastname"
-                  placeholder="Last name"
-                  {...register("lastname")}
-                />
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  {...register("email")}
-                />
-                <Input
-                  type="phone"
-                  placeholder="Phone number"
-                  {...register("phone")}
-                />
+                <div className="flex flex-col">
+                  <Input
+                    type="firstname"
+                    placeholder="First name"
+                    {...register("firstname", { required: true })}
+                  />
+                  {errors["firstname"] && (
+                    <span className="text-sm text-red-400 rounded-lg">
+                      First Name is required
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <Input
+                    type="lastname"
+                    placeholder="Last name"
+                    {...register("lastname", { required: true })}
+                  />
+                  {errors["lastname"] && (
+                    <span className="text-sm  text-red-400 rounded-lg">
+                      Last Name is required
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-col">
+                  <Input
+                    type="email"
+                    placeholder="Email address"
+                    {...register("email", { required: true })}
+                  />
+                  {errors["email"] && (
+                    <span className="text-sm  text-red-400 rounded-lg">
+                      Email Address is required
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <Input
+                    type="phone"
+                    placeholder="Phone number"
+                    {...register("phone", { required: true })}
+                  />
+                  {errors["phone"] && (
+                    <span className="text-sm   text-red-400 rounded-lg">
+                      Phone is required
+                    </span>
+                  )}
+                </div>
               </div>
-              <Textarea
-                {...register("message")}
-                className="h-[200px]"
-                placeholder="Type your message here"
-              />
+              <div className="flex flex-col">
+                <Textarea
+                  {...register("message", { required: true })}
+                  className="h-[200px]"
+                  placeholder="Type your message here"
+                />
+                {errors["message"] && (
+                  <span className="text-sm   text-red-400 rounded-lg">
+                    Message is required
+                  </span>
+                )}
+              </div>
+
               {/* submit button */}
               <div className="flex items-end justify-center">
                 {loading ? (
