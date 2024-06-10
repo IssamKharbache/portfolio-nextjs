@@ -11,11 +11,7 @@ import PageTransition from "@/components/mycomp/PageTransition";
 import Stairtransition from "@/components/mycomp/StairTransition";
 import { Toaster } from "sonner";
 import Footer from "@/components/mycomp/Footer";
-
-export const metadata = {
-  title: "Issam Kharbache",
-  description: "Kharbache Portfolio",
-};
+import NextTopLoader from "nextjs-toploader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -42,6 +38,9 @@ const outfit = Outfit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-outfit",
 });
+export const metadata = {
+  title: "Issam Kharbache",
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -49,9 +48,14 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${jetbrainsMono.variable} ${majorMono.variable} ${londrina.variable} ${outfit.variable} mt-24 xl:mt-4`}
       >
         <Toaster richColors position="top-center" />
+
         <Header />
+
         <Stairtransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          <NextTopLoader />
+          {children}
+        </PageTransition>
         <Footer />
       </body>
     </html>

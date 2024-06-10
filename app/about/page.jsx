@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 //framer motion
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 //about
 const about = {
@@ -124,7 +124,7 @@ const About = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 2,
           duration: 0.4,
           ease: "easeIn",
         },

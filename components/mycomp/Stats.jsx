@@ -8,7 +8,7 @@ const stats = [
     text: "Projects completed ",
   },
   {
-    num: 150,
+    num: 300,
     text: "Code commits",
   },
   {
@@ -18,14 +18,14 @@ const stats = [
 ];
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
+    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0 ">
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-6 max-w-[80vh] mx-auto xl:max-w-none">
           {stats.map((stat, i) => {
             return (
               <div
                 key={i}
-                className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
+                className="flex-1 flex gap-4 items-center justify-center "
               >
                 <CountUp
                   end={stat.num}

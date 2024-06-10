@@ -32,6 +32,10 @@ export const footerNavLinks = [
     name: "Email",
     link: "mailto:issamkharbache2@gmail.com ",
   },
+  {
+    name: "Support me",
+    link: "https://buymeacoffee.com/issamkharbo",
+  },
 ];
 
 export const projects = [
@@ -39,79 +43,81 @@ export const projects = [
     //shopay ecomm
     id: 1,
     num: "01",
-    category: "frontend",
-    title: "project 1",
-    color: "from-red-300 to-blue-300",
+    category: "fullstack",
+    title: "Shopay",
+    color: "from-black to-[#0F2027]",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit ",
+      "Shopay is a multivendor ecommerce platform where clients can sell and buy multiple and different products.",
     stack: [
       {
-        name: "JSX",
+        name: "Next.js",
       },
       {
-        name: "Tailwindcss",
+        name: "Tailwind.css",
       },
       {
-        name: "Next js",
+        name: "Nextauth",
       },
       {
-        name: "Mongodb",
+        name: "Redux",
+      },
+      {
+        name: "MongoDb",
+      },
+      {
+        name: "Prisma",
       },
     ],
-    image: "/logo.png",
-    github: "",
-    live: "",
+    image: "/shopaye.png",
+    github: "https://github.com/IssamKharbache/Shopay-multivendor",
+    live: "https://shopay-multivendor.vercel.app/",
   },
   {
-    //shopay ecomm
+    //foodify
     id: 2,
     num: "02",
-    category: "fullstack",
-    title: "project 2",
-    color: "from-blue-300 to-violet-300",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    category: "frontend",
+    title: "Foodify",
+    color: "from-[#0F2027] to-[#203A43] to-[#2C5364]",
+    description:
+      "Foodify is a restaurent front end project built by next js and framer motion",
     stack: [
       {
-        name: "Next.js",
+        name: "React.js",
       },
       {
         name: "Tailwind.css",
       },
       {
-        name: "Next.js",
-      },
-      {
-        name: "Node.js",
+        name: "Framer motion",
       },
     ],
-    image: "",
-    github: "",
-    live: "",
+    image: "/foodify.png",
+    github: "https://github.com/IssamKharbache/Foodify",
+    live: "https://foodify-ruddy.vercel.app/",
   },
+
   {
-    //shopay ecomm
     id: 3,
     num: "03",
-    category: "fullstack",
-    color: "from-violet-300 to-purple-300",
-    title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
+    category: "front-end",
+    color: "from-[#2C5364] to-[#C5796D]",
+    title: "Royal arc",
+    description:
+      "Royal arc is an example of a full fledge marketing agency that specializes in branding, web design, and digital marketing.. ",
     stack: [
       {
         name: "Next.js",
       },
       {
-        name: "Tailwind.css",
+        name: "Typescript",
       },
       {
-        name: "Next.js",
-      },
-      {
-        name: "Node.js",
+        name: "Framer motion",
       },
     ],
-    image: "",
-    github: "",
-    live: "",
+    image: "/royalarc.png",
+    github: "https://github.com/IssamKharbache/Royal-arc",
+    live: "https://royal-arc.vercel.app/",
   },
 ];

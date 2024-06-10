@@ -36,7 +36,7 @@ export default Shape;
 function Geomtries() {
   const geometries = [
     {
-      position: [0.5, 0, 0],
+      position: [0.5, 0.2, 0],
       r: 0.3,
       geometry: new THREE.IcosahedronGeometry(3.5), //diamond
     },
@@ -47,7 +47,7 @@ function Geomtries() {
       geometry: new THREE.CapsuleGeometry(0.6, 1.8, 2.5, 17), //pill
     },
     {
-      position: [-1.8, 3, -6],
+      position: [-1, 3, -6],
       r: 0.6,
       geometry: new THREE.DodecahedronGeometry(2.5), //football
     },

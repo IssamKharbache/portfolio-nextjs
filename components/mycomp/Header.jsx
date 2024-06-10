@@ -1,16 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ButtonMenu from "./ButtonMenu";
 import styles from "@/app/styles/style.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
 import useDeviceSize from "@/lib/useDeviceSize ";
 import { usePathname } from "next/navigation";
-//getting actual size of window
+import { FloatingNavBar } from "@/app/snippets/navbar-snippet";
+import Image from "next/image";
 
 const Header = () => {
-  const pathName = usePathname();
-  console.log(pathName);
   const [width] = useDeviceSize();
   const variants = {
     open: {
@@ -28,10 +27,11 @@ const Header = () => {
       transition: { duration: 0.75, delay: 0.35, ease: [0.76, 0, 0.24, 1] },
     },
   };
-
   const [isActive, setIsActive] = useState(false);
-  if (pathName === "/projects") {
-    return <p>No header</p>;
+  //rendering diff navbar on projects page
+  const staticPath = usePathname();
+  if (staticPath === "/projects") {
+    return <FloatingNavBar />;
   }
   return (
     <div className={styles.header}>

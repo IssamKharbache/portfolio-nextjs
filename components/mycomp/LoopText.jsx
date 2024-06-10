@@ -1,19 +1,19 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
 
-const LoopText = () => {
+const LoopText = ({ words, cursor, firstWord, loop, className }) => {
   return (
-    <h1 className="flex items-center gap-4 justify-center xl:justify-start text-xl mb-4">
-      Software
+    <h1 className={className}>
+      {firstWord}
       <span className="text-accent">
         <Typewriter
-          words={["Developer", "Designer"]}
+          words={words}
           cursor
-          cursorStyle="_"
-          typeSpeed={70}
+          cursorStyle={cursor}
+          typeSpeed={200}
           deleteSpeed={50}
           delaySpeed={1000}
-          loop={true}
+          loop={loop}
         />
       </span>
     </h1>

@@ -31,9 +31,8 @@
       &:nth-of-type(2){
           position: absolute;
           top: 100%;
-          background-color: black;
+          background-color:black;
           color: white;
-          
       }
       &:hover{
         .perspectiveText{
@@ -44,7 +43,6 @@
               opacity: 0 ;
             }
             &:nth-of-type(2){
-              
               opacity: 1 ;
             }
           }
@@ -71,7 +69,6 @@
       }
     }
    }
-   
  }
 
  .nav {
@@ -82,7 +79,6 @@
   height: 100%;
   box-sizing: border-box;
   .navBody{
-    
     display: flex;
         gap: 10px;
         flex-direction: column;
@@ -94,13 +90,12 @@
       text-decoration: none;
       color: black;
       font-size: 46px;
-     
+      text-transform: capitalize;
     }
     a:hover{
       color: white;
       transition-duration: 300ms;
     }
-   
   }
   .footerNav{
     display: flex;
@@ -110,14 +105,10 @@
       color: black;
       text-decoration: none;
       text-transform: capitalize;
-      
     }
     a:hover{
       color: white;
       transition-duration: 300ms;
     }
   }
- 
  }
-
- 

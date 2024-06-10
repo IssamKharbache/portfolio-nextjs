@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -119,7 +118,7 @@ const Contact = () => {
                     Sending message Please wait...
                     <svg
                       aria-hidden="true"
-                      class="w-8 h-8 text-gray-200 animate-spin fill-accent dark:text-gray-600 fill-"
+                      className="w-8 h-8 text-gray-200 animate-spin fill-accent dark:text-gray-600 fill-"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +132,7 @@ const Contact = () => {
                         fill="currentFill"
                       />
                     </svg>
-                    <span class="sr-only">Loading...</span>
+                    <span className="sr-only">Loading...</span>
                   </Button>
                 ) : (
                   <Button
