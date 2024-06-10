@@ -3,8 +3,6 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
-  const password = process.env.EMAILPASS;
-  const myEmail = process.env.EMAIL;
   try {
     const { email, firstname, lastname, subject, phone, message } =
       await request.json();
