@@ -42,7 +42,7 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const res = await fetch(`/api/contact`, {
+      const res = await fetch(`${process.env.BASE_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
