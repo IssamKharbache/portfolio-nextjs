@@ -39,19 +39,17 @@ const Contact = () => {
 
   const onSubmitForm = async (data) => {
     data.subject = "Get in touch with client from portfolio";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
     try {
       setLoading(true);
-      const res = await fetch(
-        `https://kharbache-issam-portfolio.vercel.app/api/contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
+      const res = await fetch(`${baseUrl}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
       if (res.ok) {
         setLoading(false);
         toast.success("Message sent successfully");
@@ -59,6 +57,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.log(error);
+      setLoading(false);
       toast.error("Something went wrong");
     }
   };
