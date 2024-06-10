@@ -42,13 +42,16 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const res = await fetch(`${process.env.BASE_URL}/api/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        `https://kharbache-issam-portfolio.vercel.app/contact/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       if (res.ok) {
         setLoading(false);
         toast.success("Message sent successfully");
