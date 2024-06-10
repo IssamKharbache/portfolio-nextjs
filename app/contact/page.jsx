@@ -44,7 +44,8 @@ const Contact = () => {
     try {
       setLoading(true);
       const res = await fetch(
-        `https://kharbache-issam-portfolio.vercel.app/api/contact`,
+        `
+        ${baseUrl}/api/contact`,
         {
           method: "POST",
           headers: {
