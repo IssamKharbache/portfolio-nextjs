@@ -156,11 +156,15 @@ const About = () => {
                   {about.info.map((item, index) => {
                     return (
                       <li
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className="flex items-center justify-start xl:justify-start gap-4"
                         key={index}
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-white/60 text-[15px] md:text-[20px]">
+                          {item.fieldName}
+                        </span>
+                        <span className="text-sm md:text-xl">
+                          {item.fieldValue}
+                        </span>
                       </li>
                     );
                   })}

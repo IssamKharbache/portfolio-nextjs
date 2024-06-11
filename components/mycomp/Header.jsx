@@ -29,9 +29,11 @@ const Header = () => {
   };
   const [isActive, setIsActive] = useState(false);
   //disable scrolling when menu is opened
-  isActive
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "auto");
+  if (process.browser) {
+    isActive
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }
   //rendering diff navbar on projects page
   const staticPath = usePathname();
   if (staticPath === "/projects") {
