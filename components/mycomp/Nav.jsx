@@ -17,11 +17,7 @@ const Nav = ({ setIsActive }) => {
               exit="exit"
               initial="initial"
             >
-              <Link
-                className={styles.navLinks}
-                onClick={() => setIsActive(false)}
-                href={link.path}
-              >
+              <Link onClick={() => setIsActive(false)} href={link.path}>
                 {link.name}
               </Link>
             </motion.div>

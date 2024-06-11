@@ -13,7 +13,7 @@ const Header = () => {
   const [width] = useDeviceSize();
   const variants = {
     open: {
-      width: width > 520 ? 480 : 350,
+      width: width > 520 ? 480 : 300,
       height: 650,
       top: "-25px",
       left: "-25px",
@@ -28,6 +28,10 @@ const Header = () => {
     },
   };
   const [isActive, setIsActive] = useState(false);
+  //disable scrolling when menu is opened
+  isActive
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
   //rendering diff navbar on projects page
   const staticPath = usePathname();
   if (staticPath === "/projects") {
@@ -43,7 +47,7 @@ const Header = () => {
       >
         {/* nav menu*/}
         <AnimatePresence>
-          {isActive && <Nav setIsActive={setIsActive} />}
+          {isActive && <Nav isActive={isActive} setIsActive={setIsActive} />}
         </AnimatePresence>
       </motion.div>
       {/* button menu */}

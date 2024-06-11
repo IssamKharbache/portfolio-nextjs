@@ -232,8 +232,10 @@ const Contact = () => {
               {info.map((item, index) => {
                 return (
                   <li className="flex items-center gap-6" key={index}>
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
+                    <div className="w-[40px] h-[40px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                      <div className="text-[15px] xl:text-[28px]">
+                        {item.icon}
+                      </div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60 capitalize">{item.title}</p>
@@ -241,12 +243,14 @@ const Contact = () => {
                         <Link
                           target="_blank"
                           href="mailto:issamkharbache2@gmail"
-                          className="text-xl underline"
+                          className="text-lg md:text-xl underline"
                         >
                           {item.description}
                         </Link>
                       ) : (
-                        <h3 className="text-xl">{item.description}</h3>
+                        <h3 className="text-lg md:text-xl">
+                          {item.description}
+                        </h3>
                       )}
                     </div>
                   </li>

@@ -33,7 +33,7 @@ const Projects = () => {
           <AnimatedText
             delay="2"
             text="Projects"
-            className="text-accent  font-extrabold text-[70px] xl:text-[150px] mb-12"
+            className="text-accent  font-extrabold text-[50px] xl:text-[150px] mb-12"
           />
           <motion.div
             className="flex text-accent"
@@ -55,24 +55,21 @@ const Projects = () => {
                 key={project.id}
               >
                 <div className="flex flex-col  gap-8 text-white">
-                  <div className="text-8xl leading-none font-extrabold font-londrina">
-                    {project.num}
-                  </div>
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                  <h1 className="text-4xl font-bold md:text-4xl lg:text-6xl xl:text-8xl mb-8">
                     {project.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-94 lg:w-[500px] lg:h-[350px] xl:w-[580px] xl:h-[420] overflow-hidden">
+                  <div className="relative w-80 h-56 md:w-96 md:h-94 lg:w-[500px] lg:h-[350px] xl:w-[580px] xl:h-[420] overflow-hidden pb-4">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-contain rounded-lg "
+                      className="object-cover rounded-md "
                     />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {project.description}
                   </p>
-                  <ul className="flex flex-wrap gap-4 w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <ul className="flex flex-wrap gap-4 text-xs w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {project.stack.map((stack, idx) => {
                       return (
                         <li key={idx} className="">
@@ -84,7 +81,7 @@ const Projects = () => {
                   </ul>
 
                   {/* button */}
-                  <div className="flex items-center gap-4 ">
+                  <div className="flex items-center gap-4 mb-12 ">
                     {/* live button */}
                     <Link href={project.live} target="_blank">
                       <TooltipProvider delayDuration={100}>

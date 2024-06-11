@@ -13,7 +13,7 @@ import AnimatedText from "@/components/mycomp/AnimatedText";
 
 const Home = () => {
   return (
-    <section className="h-full py-4 mt-14">
+    <section className="h-full py-4 mt-44 md:mt-14">
       <div className="container mx-auto h-full ">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
@@ -25,15 +25,15 @@ const Home = () => {
               firstWord="Web"
               words={["Developer", "Designer"]}
             />
-            <h1 className="h1 font-outfit flex flex-col gap-4 mb-6">
+            <h1 className="h1 font-outfit text-[20px] md:text-[30px] xl:text-[50px] flex flex-col gap-4 mb-6">
               Hello I'm <br />
               <AnimatedText
                 delay="2"
                 text="Issam Kharbache"
-                className="text-accent font-outfit font-extrabold text-[70px] xl:text-[150px] "
+                className="text-accent font-outfit font-extrabold text-[60px] md:text-[70px] xl:text-[130px] "
               />
             </h1>
-            <p className="max-w-[500px] sm:ml-12 xl:ml-0  mb-9 text-white/80">
+            <p className="max-w-[500px] sm:ml-12 xl:ml-0  mb-9 text-white/80 text-[12px] md:text-[15px] ">
               I'm a full stack developer. I enjoy building sites & apps and I am
               proficient in various programming languages and technologies. My
               focus is on{" "}
