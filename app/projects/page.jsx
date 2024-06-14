@@ -69,19 +69,9 @@ const Projects = () => {
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {project.description}
                   </p>
-                  <ul className="flex flex-wrap gap-4 text-xs w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                    {project.stack.map((stack, idx) => {
-                      return (
-                        <li key={idx} className="">
-                          {stack.name}
-                          {idx !== project.stack.length - 1 && ","}
-                        </li>
-                      );
-                    })}
-                  </ul>
 
                   {/* button */}
-                  <div className="flex items-center gap-4 mb-12 ">
+                  <div className="flex items-center gap-4 mb-12">
                     {/* live button */}
                     <Link href={project.live} target="_blank">
                       <TooltipProvider delayDuration={100}>
@@ -116,7 +106,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="w-screen bg-white h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-5xl  xl:text-8xl text-black">
+        <h1 className="text-5xl  xl:text-8xl text-black mt-16">
           Do you have a project ?
         </h1>
         <div className="relative">
