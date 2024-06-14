@@ -29,7 +29,7 @@ const info = [
 ];
 
 const Contact = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
   const {
     register,
