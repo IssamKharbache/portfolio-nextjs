@@ -1,6 +1,4 @@
-import createNextIntlPlugin from "next-intl/plugin";
-
-const withNextIntl = createNextIntlPlugin();
+import { withNextVideo } from "next-video/process";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,4 +9,4 @@ const nextConfig = {
   },
 };
 
-export default withNextIntl(nextConfig);
+export default withNextVideo(nextConfig);

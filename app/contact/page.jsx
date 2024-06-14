@@ -29,7 +29,7 @@ const info = [
 ];
 
 const Contact = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [messageSent, setMessageSent] = useState(false);
   const {
     register,
@@ -192,7 +192,7 @@ const Contact = () => {
                       disabled
                       type="submit"
                       size="md"
-                      className="w-full md:max-w-[450px] flex items-center gap-4 opacity-50 hover:bg-accent disabled:cursor-not-allowed"
+                      className="w-full md:max-w-[450px] text-[0px] md:text-lg  flex items-center gap-4 opacity-50 hover:bg-accent disabled:cursor-not-allowed"
                     >
                       Sending message Please wait...
                       <svg

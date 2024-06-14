@@ -5,7 +5,6 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/mycomp/Socials";
 import Shapes from "@/components/mycomp/Shape";
 import Stats from "@/components/mycomp/Stats";
-
 import LoopText from "@/components/mycomp/LoopText";
 import Link from "next/link";
 import { motion } from "framer-motion";
