@@ -120,4 +120,36 @@ export const projects = [
     github: "https://github.com/IssamKharbache/Royal-arc",
     live: "https://royal-arc.vercel.app/",
   },
+  {
+    id: 4,
+    num: "04",
+    category: "frontend",
+    title: "Carent",
+    color: "from-[#C5796D] to-[#ee9ca7]",
+    description:
+      "Carent is a leading provider of car rental services dedicated to offering convenient and reliable transportation solutions.",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind.css",
+      },
+      {
+        name: "Nextauth",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "MongoDb",
+      },
+      {
+        name: "Prisma",
+      },
+    ],
+    image: "/carent.png",
+    github: "https://github.com/IssamKharbache/Carent",
+    live: "https://carent-tau.vercel.app/",
+  },
 ];

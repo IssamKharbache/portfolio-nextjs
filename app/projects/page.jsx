@@ -67,12 +67,12 @@ const Projects = () => {
                   <h1 className="text-4xl font-bold md:text-4xl lg:text-6xl xl:text-8xl mb-8">
                     {project.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-94 lg:w-[500px] lg:h-[350px] xl:w-[580px] xl:h-[420] overflow-hidden pb-4">
+                  <div className="relative w-80 h-56 md:w-96 md:h-94 lg:w-[500px] lg:h-[350px] xl:w-[580px] xl:h-[420px] overflow-hidden pb-4">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover rounded-md "
+                      className="object-cover rounded-md  "
                     />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
@@ -111,9 +111,11 @@ const Projects = () => {
                 </div>
               </div>
             ))}
+            <div className="h-screen w-96 flex items-center justify-center bg-gradient-to-r bg-[#ee9ca7]"></div>
           </motion.div>
         </div>
       </div>
+
       <div className="w-screen bg-white h-screen flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-5xl  xl:text-8xl text-black mt-16">
           Do you have a project ?
