@@ -35,15 +35,6 @@ const Projects = () => {
             text="Projects"
             className="text-accent  font-extrabold text-[50px] xl:text-[150px] mb-12"
           />
-          <motion.p
-            initial={{ y: "-200vh" }}
-            animate={{ y: "0%" }}
-            transition={{ duration: 3 }}
-            className="text-accent  w-80 md:w-full   font-extrabold text-[20px]  mb-12"
-          >
-            (some of the projects are not fully responsive on mobile , I'm
-            working on that soon.)
-          </motion.p>
           <motion.div
             className="flex text-accent"
             initial={{ y: "-200vh" }}
