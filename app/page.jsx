@@ -21,7 +21,7 @@ const Home = () => {
               className="flex items-center gap-4 justify-center xl:justify-start text-xl mb-4"
               loop={true}
               cursor="_"
-              firstWord="Web"
+              firstWord="Software"
               words={["Developer", "Designer"]}
             />
             <h1 className="h1 font-outfit text-[20px] md:text-[30px] xl:text-[50px] flex flex-col gap-4 mb-6">
@@ -34,15 +34,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] sm:ml-12 xl:ml-0  mb-9 text-white/80 text-[12px] md:text-[15px] ">
               I'm a full stack developer. I enjoy building sites & apps and I am
-              proficient in various programming languages and technologies. My
-              focus is on{" "}
-              <Link
-                href="https://nextjs.org/"
-                target="_blank"
-                className="underline"
-              >
-                NextJS
-              </Link>
+              proficient in various programming languages and technologies.
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

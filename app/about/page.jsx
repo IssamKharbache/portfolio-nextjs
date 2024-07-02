@@ -25,7 +25,8 @@ import { motion } from "framer-motion";
 //about
 const about = {
   title: "About me",
-  description: "I'm passionate about web development and technologies.",
+  description:
+    "I'm a passionate software and web developer with a strong foundation in crafting dynamic and user-friendly applications. With a keen eye for detail and a commitment to delivering highly functional solutions, I thrive on turning complex problems into elegant, efficient designs. My expertise spans front-end and back-end development, allowing me to create seamless experiences across platforms",
   info: [
     {
       fieldName: "Name",

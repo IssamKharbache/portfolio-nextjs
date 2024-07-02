@@ -25,7 +25,7 @@ const Projects = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-83%"]);
   return (
     <div className="h-full">
       <div className="h-[600vh] relative" ref={ref}>
@@ -70,6 +70,12 @@ const Projects = () => {
                     {project.description}
                   </p>
 
+                  {project.title === "Easy eat" && (
+                    <p className="text-xs bg-slate-200 text-black rounded-lg p-4 max-w-[250px]">
+                      Please contact me to obtain the link for admin dashboard
+                    </p>
+                  )}
+
                   {/* button */}
                   <div className="flex items-center gap-4 mb-12">
                     {/* live button */}
@@ -102,7 +108,6 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-            <div className="h-screen w-96 flex items-center justify-center bg-gradient-to-r bg-[#ee9ca7]"></div>
           </motion.div>
         </div>
       </div>

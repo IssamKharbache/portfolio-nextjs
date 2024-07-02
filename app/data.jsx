@@ -73,30 +73,28 @@ export const projects = [
     live: "https://shopay-multivendor.vercel.app/",
   },
   {
-    //foodify
     id: 2,
     num: "02",
-    category: "frontend",
-    title: "Foodify",
+    category: "full-stack",
     color: "from-[#0F2027] to-[#203A43] to-[#2C5364]",
+    title: "Easy eat",
     description:
-      "Foodify is a restaurent front end project built by next js and framer motion",
+      "Easy eat is food delivery  full stack application with an user friendly admin dashboard where you can easily manage your products and also all your orders",
     stack: [
       {
-        name: "React.js",
+        name: "Next.js",
       },
       {
-        name: "Tailwind.css",
+        name: "Typescript",
       },
       {
         name: "Framer motion",
       },
     ],
-    image: "/foodify.png",
-    github: "https://github.com/IssamKharbache/Foodify",
-    live: "https://foodify-ruddy.vercel.app/",
+    image: "/easyeatscreen.png",
+    github: "https://github.com/IssamKharbache/EasyEat",
+    live: "https://easy-eat-platform.vercel.app/",
   },
-
   {
     id: 3,
     num: "03",
@@ -151,5 +149,29 @@ export const projects = [
     image: "/carent.png",
     github: "https://github.com/IssamKharbache/Carent",
     live: "https://carent-tau.vercel.app/",
+  },
+  {
+    //foodify
+    id: 5,
+    num: "05",
+    category: "frontend",
+    title: "Foodify",
+    color: "from-[#ee9ca7] to-[#203A43] to-[#2C5364]",
+    description:
+      "Foodify is a restaurent front end project built by next js and framer motion",
+    stack: [
+      {
+        name: "React.js",
+      },
+      {
+        name: "Tailwind.css",
+      },
+      {
+        name: "Framer motion",
+      },
+    ],
+    image: "/foodify.png",
+    github: "https://github.com/IssamKharbache/Foodify",
+    live: "https://foodify-ruddy.vercel.app/",
   },
 ];
